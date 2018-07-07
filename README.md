@@ -1,5 +1,8 @@
 # haxorof/openstack-cli
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/haxorof/openstack-cli.svg)](https://hub.docker.com/r/haxorof/openstack-cli/)
+[![Docker Build Status](https://img.shields.io/docker/build/haxorof/openstack-cli.svg)](https://hub.docker.com/r/haxorof/openstack-cli/)
+
 ## How to use this image
 
 Simplest way of using this image is to just run with the arguments you want. Example below will show the help of `openstack` command:
