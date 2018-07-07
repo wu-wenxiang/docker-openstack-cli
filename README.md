@@ -17,3 +17,11 @@ using the `test` cloud configuration defined in `${HOME}/.config/openstack/cloud
 ```console
 docker run -it --rm -v ${HOME}/.config/openstack:/etc/openstack haxorof/openstack-cli --os-cloud test server list
 ```
+
+## Set bash alias for openstack
+
+To make it easier to use this container you could setup bash aliases by creating `~/.bash_aliases` with the following contents:
+
+```bash
+alias openstack='docker run -it --rm -v ${HOME}/.config/openstack:/etc/openstack haxorof/openstack-cli'
+```
