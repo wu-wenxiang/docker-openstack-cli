@@ -6,6 +6,11 @@
 
 > "OpenStackClient (aka OSC) is a command-line client for OpenStack that brings the command set for Compute, Identity, Image, Object Storage and Block Storage APIs together in a single shell with a uniform command structure." [docs.openstack.org](https://docs.openstack.org/python-openstackclient/latest/)
 
+In addition to the standard OpenStack client the following clients are also available:
+
+- Designate
+- Heat
+
 ## How to use this image
 
 Simplest way of using this image is to just run with the arguments you want. Example below will show the help of `openstack` command:
