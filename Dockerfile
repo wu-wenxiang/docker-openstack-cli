@@ -7,6 +7,8 @@ RUN apk add --no-cache linux-headers \
     && pip install --upgrade pip \
     && pip install python-openstackclient \
     && pip install python-designateclient \
-    && pip install python-heatclient
+    && pip install python-heatclient \
+    && rm -rf /var/cache/apk/* \
+    && rm -rf /root/.cache
 
 ENTRYPOINT [ "openstack" ]
