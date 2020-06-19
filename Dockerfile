@@ -1,5 +1,8 @@
 FROM python:3.8.3-alpine
 
+LABEL org.opencontainers.image.title="haxorof/openstack-cli" \
+    org.opencontainers.image.description="OpenStackClient (aka OSC)"
+
 COPY requirements.txt .
 
 RUN apk add --no-cache linux-headers \
