@@ -16,6 +16,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Lint Dockerfile
+        uses: docker://replicated/dockerfilelint:latest
+        with:
+          args: Dockerfile
+
       - uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
