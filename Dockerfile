@@ -1,6 +1,6 @@
 FROM python:3.11.3-alpine
 
-LABEL org.opencontainers.image.title="haxorof/openstack-cli" \
+LABEL org.opencontainers.image.title="caas4/openstack-cli" \
     org.opencontainers.image.description="OpenStackClient (aka OSC)"
 
 COPY requirements.txt .
